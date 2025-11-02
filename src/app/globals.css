@@ -17,7 +17,7 @@ body {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: flex-start;
   /* position: relative; */
   top: -100px;
@@ -27,6 +27,7 @@ body {
   gap: 8px;
   padding-left: 8rem;
   padding-right: 8rem;
+  padding-top: 4rem;
 }
 
 .avatar {
