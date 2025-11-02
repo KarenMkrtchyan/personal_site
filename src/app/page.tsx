@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { calculateTimeUntilGraduation } from "@/lib/date";
-import ImageSlider from "@/components/ImageSlider";
+import ProjectsScroller from "@/components/ProjectScroller";
+import { projects } from "@/lib/projects";
 
 export default function Home() {
   const { years, months, days } = calculateTimeUntilGraduation();
@@ -39,13 +40,8 @@ export default function Home() {
             <li>mentoring future Armenian engineers and scientists</li>
           </ul>
           <h2 className="font-semibold">Projects</h2>
-          {/* <ImageSlider /> */}
+          <ProjectsScroller projects={projects} />
         </div>
-      </div>
-      <div className="">
-        <div>Content list</div>
-        <div>Current</div>
-        <div>Past</div>
       </div>
     </div>
   );
